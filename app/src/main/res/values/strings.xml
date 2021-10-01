@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">UserProject</string>
+    <string name="error">Something went wrong.. Please try again later.</string>
+    <string name="full_name_template">%1$s %2$s</string>
+    <string name="age">Age:</string>
+    <string name="email">Email:</string>
+</resources>
