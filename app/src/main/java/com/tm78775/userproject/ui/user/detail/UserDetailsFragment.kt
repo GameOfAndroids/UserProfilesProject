@@ -6,11 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
-import com.tm78775.userproject.R
 import com.tm78775.userproject.databinding.UserDetailsFragmentBinding
 import com.tm78775.userproject.ui.user.UserViewModel
-import com.tm78775.userproject.ui.user.fadeIn
+import com.tm78775.userproject.ui.fadeIn
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
