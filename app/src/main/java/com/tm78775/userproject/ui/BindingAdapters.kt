@@ -1,4 +1,4 @@
-package com.tm78775.userproject.ui.user
+package com.tm78775.userproject.ui
 
 import android.view.View
 import android.widget.ImageView

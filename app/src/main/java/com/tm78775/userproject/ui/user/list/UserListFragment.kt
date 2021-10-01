@@ -1,26 +1,22 @@
 package com.tm78775.userproject.ui.user.list
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.snackbar.Snackbar
-import com.tm78775.userproject.R
 import com.tm78775.userproject.data.model.User
 import com.tm78775.userproject.databinding.UserListFragmentBinding
+import com.tm78775.userproject.ui.RecyclerViewSpacingDecoration
 import com.tm78775.userproject.ui.user.UserViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
@@ -57,12 +53,13 @@ class UserListFragment : Fragment() {
                     false
                 )
                 adapter = userListAdapter
-                addItemDecoration(
-                    UserSpacingDecorator(
-                        12,
-                        24
-                    )
-                )
+
+                RecyclerViewSpacingDecoration(
+                    12,
+                    24
+                ).also {
+                    addItemDecoration(it)
+                }
             }
         }.root
     }

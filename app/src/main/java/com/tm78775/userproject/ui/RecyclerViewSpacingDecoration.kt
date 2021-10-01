@@ -1,4 +1,4 @@
-package com.tm78775.userproject.ui.user.list
+package com.tm78775.userproject.ui
 
 import androidx.recyclerview.widget.RecyclerView
 import android.view.View
@@ -8,7 +8,7 @@ import android.graphics.Rect
 /**
  * This class will apply appropriate spacing inside the recyclerview for our list of users.
  */
-class UserSpacingDecorator(
+class RecyclerViewSpacingDecoration(
     private val verticalSpacing: Int = 0,
     private val horizontalSpacing: Int = 0
 ) : RecyclerView.ItemDecoration() {
